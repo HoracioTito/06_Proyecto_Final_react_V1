@@ -7,7 +7,7 @@ const LoadingScreen = () => {
         <div className='spinner-center'>
             <div >
                 <h1>Loading</h1>
-                <Spinner animation="grow" variant="secondary spinner-w" />
+                <Spinner animation="grow" variant="success spinner-w" />
             </div>
         </div>
     );
