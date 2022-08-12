@@ -117,7 +117,7 @@ const Home = () => {
                 </Row>
             </Container>
 
-            <Container>
+            <Container style={{ minHeight: "calc(100vh - 298px)" }} >
                 <Row>
                     <Col xs={12}  sm={10} md={3}>
                         <ListGroup>

@@ -19,9 +19,7 @@ export const cartSlice = createSlice({
 /* add Cart where data = { id , quantity}   */
 export const addCartThunk = (id ,quantity) => (dispatch) => {
     const data = { id: id, quantity : quantity}
-    console.log('*********>>>>')
-    console.log(data)
-    console.log('*********>>>>')
+ 
     dispatch(setIsLoading(true));
     return axios.post(`https://ecommerce-api-react.herokuapp.com/api/v1/cart`, data , getConfig() )
         .then(()=>{
